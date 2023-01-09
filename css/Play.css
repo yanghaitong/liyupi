@@ -1,0 +1,122 @@
+@import 'UTF-8';
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    /* background-color: rgb( 245, 245, 245); */
+    background-color: #c7ecee;
+    font-family: '';
+}
+
+/* 底部导航栏 */
+footer{
+    display: flex;/*设置弹性盒子*/
+    justify-content: space-around;/*水平对齐，两边间距是中间间距的一半*/
+    align-items: center;/* 垂直居中对齐 */
+    position: fixed;
+    bottom:0;
+    color: black;
+    background-color: rgb( 245, 245, 245);
+    left:50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 50px;
+    border-top:1px solid #ccc;
+    max-width: 760px;
+    font-size: 15px;
+    text-align: center;
+}
+footer div{
+    width: 80px;
+}
+
+
+/* 标签页 */
+.label {
+    height: 40px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+/*.tab_list {
+
+}*/
+
+.tab_list ul {
+    /* width: 310px; */
+    display: inline-block;
+    text-align: center;
+}
+
+.tab_list > ul > li {
+    display: inline-block;
+    border: 1px solid rgb( 206, 204, 204);
+    padding: 5px 5px 5px 5px;
+    margin: 10px 0 0 13px;
+}
+
+.tab_list > ul > li:nth-of-type(7) {
+    margin: 0 0 0 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+
+.current {
+    display: inline-block;
+    /* background-color: rgb( 245, 245, 245); */
+}
+
+/* 卡片 */
+
+/* 全部 */
+.root > .label > .tab_con > .item {
+    margin: 10px 0 0 10px;
+}
+.root > .label > .tab_con > .item > .Card-root {
+    width: 353px;
+    margin-top: 15px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb( 255, 255, 255);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.root > .label > .tab_con > .item > .Card-root > .Card-one > a > img {
+    width: 333px;
+    height: 185px;
+    padding: 10px 0 0 10px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.root > .label > .tab_con > .item > .Card-root > .Card-one > a > .content {
+    padding: 10px 0 0 10px;
+    font-weight: 300px;
+    color: #000000d9;
+}
+
+
+/* 游戏 */
+.root > .label > .tab_con > .Card {
+    margin: 10px 0 0 10px;
+}
+
+.root > .label > .tab_con > .Card > .Card-root {
+    width: 353px;
+    margin-top: 15px;
+    border-radius: 5px 5px 5px 5px;
+    background-color: rgb( 255, 255, 255);
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.root > .label > .tab_con > .Card > .Card-root > .Card-one > a > img {
+    width: 333px;
+    height: 185px;
+    padding: 10px 0 0 10px;
+    border-radius: 15px 15px 15px 15px;
+}
+.root > .label > .tab_con > .Card > .Card-root > .Card-one > a > .content {
+    padding: 10px 0 0 10px;
+    color: #000000d9;
+}

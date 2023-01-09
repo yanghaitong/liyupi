@@ -1,0 +1,172 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    /* background-color: rgb( 245, 245, 245); */
+    background-image: url(../images/Music-background.png);
+    background-repeat: no-repeat;
+    background-size: 375px 680px;
+    background-position-y: -50px;
+}
+/* 右下角音乐播放器 */
+.aplayer-body {
+    margin-bottom: 30px;
+}
+
+
+/* 底部导航栏 */
+
+footer{
+    display: flex;/*设置弹性盒子*/
+    justify-content: space-around;/*水平对齐，两边间距是中间间距的一半*/
+    align-items: center;/* 垂直居中对齐 */
+    position: fixed;
+    bottom:0;
+    color: black;
+    left:50%;
+    transform: translateX(-50%);
+    background-color: rgb( 245, 245, 245);
+    width: 100%;
+    height: 50px;
+    border-top:1px solid #ccc;
+    max-width: 760px;
+    font-size: 15px;
+    text-align: center;
+}
+footer div{
+    width: 80px;
+}
+
+/* logo  */
+.root > .Search-box > .logo {
+    margin: 0 0 0 30px;
+    vertical-align: middle;
+    display:inline-block
+}
+
+/* 输入框 */
+.root > .Search-box > .form {
+    margin-top: 8px;
+    margin-left: 10px;
+    display:inline-block
+}
+
+
+.root > .Search-box > .form > .form-box {
+    margin: 5px 0 0 10px;
+}
+
+.root > .Search-box > .form > .form-box > .form-input1{
+    border: none;
+    border: 1px solid rgb( 206, 204, 204);
+    padding: 6px 6px;
+    color: rgb( 206, 204, 204);
+    border-radius: 10px 0px 0px 10px;
+    /* 与搜索按钮平行 */
+    vertical-align: middle;
+    border-right-style: none;
+}
+
+.root > .Search-box > .form > .form-box > .form-input1:hover{
+    border-color: #70a1ff;
+}
+
+.root > .Search-box > .form > .form-box > .form-button{
+    border: none;
+    border: 1px solid rgb( 206, 204, 204);
+    width: 30px;
+    border-radius: 0px 10px 10px 0px;
+    height: 30px;
+    /* 与搜索框平行 */
+    margin-left: -5px;
+    border-left-style: none;
+    vertical-align: middle;
+    background-color: white;
+}
+
+
+.root > .Search-box > .form > .form-box > .form-button:hover{
+    border-color: #70a1ff;
+}
+
+.root > .Search-box > .form > .form-box > .form-button:visited{
+    border: none;
+    border: 1px solid rgb( 206, 204, 204);
+    width: 30px;
+    border-radius: 0px 10px 10px 0px;
+    height: 30px;
+    /* 与搜索框平行 */
+    margin-left: -2px;
+    border-left-style: none;
+    vertical-align: middle;
+    background-color: white;
+}
+
+.root > .Search-box > .form > .form-box > .form-button > .icon {
+    vertical-align: middle;
+}
+
+/* 头像 */
+.root > .Search-box > .head-portrait {
+    margin-left: 10px;
+    display:inline-block;
+}
+
+.root > .Search-box > .head-portrait > img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+
+/* 弹窗 */
+
+.web_notice {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.3);
+    z-index: 99999;
+}
+.web_notice1 {
+    width: 260px;
+    height: 330px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    background-color: #ffffff;
+    transform: translate(-50%, -50%);
+    border-radius: 15px 15px 15px 15px;
+    padding: 20px 40px 0 40px;
+}
+.web_notice > .web_notice1 > .notice {
+    font-weight: bold;
+    text-align: center;
+    font-family: '宋体';
+    /* color: #686de0; */
+    font-size: 30px;
+}
+.web_notice > .web_notice1 > .web_notice2 {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 30px;
+    /* color: #999; */
+    color: #70a1ff;
+}
+.web_notice > .web_notice1 > .tiao {
+    display: block;
+    width: 60%;
+    /* height: 15%; */
+    background-color: rgb( 24, 144, 255);;
+    color: #FFF;
+    text-align: center;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 60px;
+    margin: 0 auto;
+    margin-top: 60px;
+    border-radius: 8px 8px 8px 8px;
+}

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>App - 音乐播放器</title>
+		<link rel="shortcut icon" href="images/favicon.png" type="images/x-icon" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+		<style>
+			@import url('css/Music/Music1.css');
+		</style>
+		<!-- <link rel="stylesheet" href="css/Music1.css"> -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<script src="JavaScript/Music.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="css/Music/Music.css">
+	</head>
+	<body>
+		<audio src="" id="audio-source"></audio>
+		<!-- home section -->
+		<section class="home-section active">
+			<!-- carousel -->
+			<div class="carousel">
+				<img src="https://img-blog.csdnimg.cn/09f0fcc3efd84cd79a3998ed81570475.png#pic_center" class="active" alt="">
+				<img src="https://img-blog.csdnimg.cn/34125078cbc44871b53fdd69d71ff2b3.png#pic_center" alt="">
+				<img src="https://img-blog.csdnimg.cn/8e833b2a74ea45239ac783e62972d54a.png#pic_center" alt="">
+				<img src="https://img-blog.csdnimg.cn/df3db4d7ad42404d9f6fa0d6de15c9b3.png#pic_center" alt="">
+				<img src="https://img-blog.csdnimg.cn/c5c8e6c2ee7b42c9ae53ff185f45ee42.png#pic_center" alt="">
+			</div>
+			<h1 class="heading">最近播放</h1>
+			<div class="playlists-group">
+				<div class="playlist-card">
+					<img src="https://img-blog.csdnimg.cn/a45394119cc64dfebcf14e2a14cd08de.png#pic_center" class="playlist-card-img" alt="">
+					<p class="playlist-card-name">华语热歌</p>
+				</div>
+				<div class="playlist-card">
+					<img src="https://img-blog.csdnimg.cn/33817125dd8b4cb0852ba1d9e7d1d04e.png#pic_center" class="playlist-card-img" alt="">
+					<p class="playlist-card-name">古风戏腔</p>
+				</div>
+				<div class="playlist-card">
+					<img src="https://img-blog.csdnimg.cn/60f1a6fe5689413fa505c12c8d17e4a8.png#pic_center" class="playlist-card-img" alt="">
+					<p class="playlist-card-name">深夜酒吧</p>
+				</div>
+				<div class="playlist-card">
+					<img src="https://img-blog.csdnimg.cn/34cffbf74eb2485d892d6285e090046c.png#pic_center" class="playlist-card-img" alt="">
+					<p class="playlist-card-name">失恋回忆</p>
+				</div>
+				<div class="playlist-card">
+					<img src="https://img-blog.csdnimg.cn/593fa9528af244c69c9ea97392811e17.png#pic_center" class="playlist-card-img" alt="">
+					<p class="playlist-card-name">经典老歌</p>
+				</div>
+			</div>
+			<h1 class="heading">根据你的喜好</h1>
+			<div class="playlists-group">
+				<div class="playlist-card">
+					<img src="https://img-blog.csdnimg.cn/cb2f9f7f2e4b448ca924f3475e0cfc3d.png#pic_center" class="playlist-card-img" alt="">
+					<p class="playlist-card-name">华语热歌</p>
+				</div>
+				<div class="playlist-card">
+					<img src="https://img-blog.csdnimg.cn/ecb5236fbc57497fa61264c73ee671a0.png#pic_center" class="playlist-card-img" alt="">
+					<p class="playlist-card-name">古风戏腔</p>
+				</div>
+				<div class="playlist-card">
+					<img src="https://img-blog.csdnimg.cn/27892e92f4cc435a9788d9b95d2410dd.png#pic_center" class="playlist-card-img" alt="">
+					<p class="playlist-card-name">深夜酒吧</p>
+				</div>
+				<div class="playlist-card">
+					<img src="https://img-blog.csdnimg.cn/c8de427490e44855b199ab9dc7107249.png#pic_center" class="playlist-card-img" alt="">
+					<p class="playlist-card-name">失恋回忆</p>
+				</div>
+				<div class="playlist-card">
+					<img src="https://img-blog.csdnimg.cn/70ccbe5fa9a44998993b8a7270bf8d28.png#pic_center" class="playlist-card-img" alt="">
+					<p class="playlist-card-name">经典老歌</p>
+				</div>
+			</div>
+			<!-- 底部导航栏 -->
+			<footer style="background-color: rgb( 245, 245, 245);">
+				<div class="home">
+					<a href="index.html">
+						<img style="vertical-align: middle;" src="images/Music-index.svg" alt="">
+						<span style="vertical-align: middle;">主页</span>
+					</a>
+				</div>
+				<div class="home">
+					<a href="Image.html">
+						<img style="vertical-align: middle;" src="images/Music-Image.svg" alt="">
+						<span style="vertical-align: middle;">图片</span>
+					</a>
+				</div>
+				<div class="home">
+					<a style="color: rgb( 24, 144, 255);" href="Music.html">
+						<img style="vertical-align: middle;" src="images/Music.svg" alt="">
+						<span style="vertical-align: middle;">音乐</span>
+					</a>
+				</div>
+				<div class="home">
+					<a href="Play.html">
+						<img style="vertical-align: middle;" src="images/Music-game.svg" alt="">
+						<span style="vertical-align: middle;">游戏</span>
+					</a>
+				</div>
+				<div class="home">
+					<a href="User.html">
+						<img style="vertical-align: middle;" src="images/Music-User.svg" alt="">
+						<span style="vertical-align: middle;">我的</span>
+					</a>
+				</div>
+			</footer>
+		</section>
+		<section class="music-player-section">
+			<img src="images/back.png" class="back-btn icon hide" alt="">
+			<img src="images/nav.png" class="nav-btn icon hide" alt="">
+			<h1 class="current-song-name">song 1</h1>
+			<p class="artist-name hide">artist 1</p>
+			<img src="https://img-blog.csdnimg.cn/e934af43cf264593b32cfd990aebf956.png#pic_center" class="cover hide" alt="">
+			<div class="seek-bar-container">
+				<input type="range" class="music-seek-bar" value="0">
+				<p class="current-time hide">00 : 00</p>
+				<p class="duration hide">00 : 00</p>
+			</div>
+			<div class="controls">
+				<span class="fas fa-redo"></span>
+				<div class="main">
+					<i class="fas fa-backward active"></i>
+					<i class="fas fa-play active"></i>
+					<i class="fas fa-pause"></i>
+					<i class="fas fa-forward active"></i>
+				</div>
+				<input type="range" class="volume-slider" max="1" value="1" step="0.1">
+				<span class="fas fa-volume-up"></span>
+			</div>
+		</section>
+		<section class="playlist">
+			<img src="images/back.png" class="back-btn icon" alt="">
+			<h1 class="title">播放列表</h1>
+			<!-- 开始 -->
+			<!-- 在你的身边 -->
+			<div class="queue active">
+				<div class="queue-cover">
+					<img src="https://img-blog.csdnimg.cn/c5481098a94f4ee8b4cd8ba231dcb115.png#pic_center" alt="">
+					<i class="fas fa-pause"></i>
+				</div>
+				<p class="name">song 1 | 在你的身边</p>
+			</div>
+			<!-- 带你去找夜生活 -->
+			<div class="queue active">
+				<div class="queue-cover">
+					<img src="https://img-blog.csdnimg.cn/424336eedbd24acfb6bc617b109b0a7d.png#pic_center" alt="">
+					<i class="fas fa-pause"></i>
+				</div>
+				<p class="name">song 2 | 带你去找夜生活</p>
+			</div>
+			<!-- 骄傲的少年 -->
+			<div class="queue active">
+				<div class="queue-cover">
+					<img src="https://img-blog.csdnimg.cn/f9408ffb47994a8fa294f2aee11548ae.png#pic_center" alt="">
+					<i class="fas fa-pause"></i>
+				</div>
+				<p class="name">song 3 | 骄傲的少年</p>
+			</div>
+			<!-- 篝火旁 -->
+			<div class="queue active">
+				<div class="queue-cover">
+					<img src="https://img-blog.csdnimg.cn/ca856631a5f246288e1924162ad3904b.png#pic_centerr" alt="">
+					<i class="fas fa-pause"></i>
+				</div>
+				<p class="name">song 4 | 篝火旁</p>
+			</div>
+			<!-- 结束 -->
+		</section>
+		<!-- 顶空间的 -->
+		<div class="user">
+			<div>
+				<a style="color: yellow;" href="">
+					<svg viewBox="64 64 896 896" focusable="false" data-icon="user" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M858.5 763.6a374 374 0 00-80.6-119.5 375.63 375.63 0 00-119.5-80.6c-.4-.2-.8-.3-1.2-.5C719.5 518 760 444.7 760 362c0-137-111-248-248-248S264 225 264 362c0 82.7 40.5 156 102.8 201.1-.4.2-.8.3-1.2.5-44.8 18.9-85 46-119.5 80.6a375.63 375.63 0 00-80.6 119.5A371.7 371.7 0 00136 901.8a8 8 0 008 8.2h60c4.4 0 7.9-3.5 8-7.8 2-77.2 33-149.5 87.8-204.3 56.7-56.7 132-87.9 212.2-87.9s155.5 31.2 212.2 87.9C779 752.7 810 825 812 902.2c.1 4.4 3.6 7.8 8 7.8h60a8 8 0 008-8.2c-1-47.8-10.9-94.3-29.5-138.2zM512 534c-45.9 0-89.1-17.9-121.6-50.4S340 407.9 340 362c0-45.9 17.9-89.1 50.4-121.6S466.1 190 512 190s89.1 17.9 121.6 50.4S684 316.1 684 362c0 45.9-17.9 89.1-50.4 121.6S557.9 534 512 534z"></path></svg>
+					站长：海瞳
+				</a>
+			</div>
+			<div>
+				<a style="color: yellow;font-size: 20px;" href="">
+					副站长：long
+				</a>
+			</div>
+		</div>
+		<script>
+        var _hmt = _hmt || [];
+        (function() {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?a9430a37066911650e26adadcc42798a";
+          var s = document.getElementsByTagName("script")[0]; 
+          s.parentNode.insertBefore(hm, s);
+        })();
+        </script>
+		<script>
+			let songs = [
+			// 在你的身边
+				{
+					name: 'song 1',
+					path: 'https://dmfwy.cn/wp-content/uploads/2022/10/zai.mp3',
+					artist: '在你的身边',
+					cover: 'https://img-blog.csdnimg.cn/c5481098a94f4ee8b4cd8ba231dcb115.png#pic_center'
+				},
+			// 带你去找夜生活
+				{
+					name: 'song 2',
+					path: 'https://dmfwy.cn/wp-content/uploads/2023/01/yeshenghuo.mp3',
+					artist: '带你去找夜生活',
+					cover: 'https://img-blog.csdnimg.cn/424336eedbd24acfb6bc617b109b0a7d.png#pic_center'
+				},
+			// 骄傲的少年	
+				{
+					name: 'song 3',
+					path: 'https://dmfwy.cn/wp-content/uploads/2023/01/jiaoaodeshaonian.mp3',
+					artist: '骄傲的少年',
+					cover: 'https://img-blog.csdnimg.cn/f9408ffb47994a8fa294f2aee11548ae.png#pic_center'
+				},
+			// 篝火旁
+				{
+					name: 'song 3',
+					path: 'https://dmfwy.cn/wp-content/uploads/2023/01/gouhuopang.mp3',
+					artist: '篝火旁',
+					cover: 'https://img-blog.csdnimg.cn/ca856631a5f246288e1924162ad3904b.png#pic_center'
+				},
+			// 结束
+			]
+		</script>
+		<script>
+			///// 旋转木马/////////////////
+			
+			const carousel = [...document.querySelectorAll('.carousel img')];
+			
+			let carouselImageIndex = 0;
+			
+			const changeCarousel = () => {
+			    carousel[carouselImageIndex].classList.toggle('active');
+			
+			    if(carouselImageIndex >= carousel.length - 1){
+			        carouselImageIndex = 0;
+			    } else{
+			        carouselImageIndex++;
+			    }
+			
+			    carousel[carouselImageIndex].classList.toggle('active');
+			}
+			
+			setInterval(() => {
+			    changeCarousel();
+			}, 3000);
+			
+			/////////////////////导航////////////
+			
+			////////////切换音乐播放器
+			
+			const musicPlayerSection = document.querySelector('.music-player-section');
+			
+			let clickCount = 1;
+			
+			musicPlayerSection.addEventListener('click', () => {
+			    if(clickCount >= 2){
+			        musicPlayerSection.classList.add('active');
+			        clickCount = 1;
+			        return;
+			    }
+			    clickCount++;
+			    setTimeout(() => {
+			        clickCount = 1;
+			    }, 250);
+			})
+			
+			/////// 从音乐播放器后退
+			
+			const backToHomeBtn = document.querySelector('.music-player-section .back-btn');
+			
+			backToHomeBtn.addEventListener('click', () => {
+			    musicPlayerSection.classList.remove('active');
+			})
+			
+			//////// access playlist
+			
+			const playlistSection = document.querySelector('.playlist');
+			const navBtn = document.querySelector('.music-player-section .nav-btn');
+			
+			navBtn.addEventListener('click', () => {
+			    playlistSection.classList.add('active');
+			})
+			
+			////////// 从播放列表返回到音乐播放器
+			
+			const backToMusicPlayer = document.querySelector('.playlist .back-btn');
+			
+			backToMusicPlayer.addEventListener('click', () => {
+			    playlistSection.classList.remove('active');
+			})
+			
+			//////navigation done ////////////////
+			
+			/////// music
+			
+			let currentMusic = 0;
+			
+			const music = document.querySelector('#audio-source');
+			
+			const seekBar = document.querySelector('.music-seek-bar');
+			const songName = document.querySelector('.current-song-name');
+			const artistName = document.querySelector('.artist-name');
+			const coverImage = document.querySelector('.cover');
+			const currentMusicTime = document.querySelector('.current-time');
+			const musicDuration = document.querySelector('.duration');
+			
+			const queue = [...document.querySelectorAll('.queue')];
+			
+			// select all buttons here
+			
+			const forwardBtn = document.querySelector('i.fa-forward');
+			const backwardBtn = document.querySelector('i.fa-backward');
+			const playBtn = document.querySelector('i.fa-play');
+			const pauseBtn = document.querySelector('i.fa-pause');
+			const repeatBtn = document.querySelector('span.fa-redo');
+			const volumeBtn = document.querySelector('span.fa-volume-up');
+			const volumeSlider = document.querySelector('.volume-slider');
+			
+			// funtion for setting up music
+			
+			const setMusic = (i) => {
+			    seekBar.value = 0;
+			    let song = songs[i];
+			    currentMusic = i;
+			
+			    music.src = song.path;
+			
+			    songName.innerHTML = song.name;
+			    artistName.innerHTML = song.artist;
+			    coverImage.src = song.cover;
+			
+			    setTimeout(() => {
+			        seekBar.max = music.duration;
+			        musicDuration.innerHTML = formatTime(music.duration);
+			    }, 300);
+			    currentMusicTime.innerHTML = '00 : 00';
+			    queue.forEach(item => item.classList.remove('active'));
+			    queue[currentMusic].classList.add('active');
+			}
+			
+			setMusic(0);
+			
+			// format duration in 00 : 00 format
+			
+			const formatTime = (time) => {
+			    let min = Math.floor(time / 60);
+			    if(min < 10){
+			        min = `0` + min;
+			    }
+			
+			    let sec = Math.floor(time % 60);
+			    if(sec < 10){
+			        sec = `0` + sec;
+			    }
+			
+			    return `${min} : ${sec}`;
+			}
+			
+			
+			// playBtn click event
+			
+			playBtn.addEventListener('click', () => {
+			    music.play();
+			    playBtn.classList.remove('active');
+			    pauseBtn.classList.add('active');
+			})
+			
+			
+			// pauseBtn click event
+			
+			pauseBtn.addEventListener('click', () => {
+			    music.pause();
+			    pauseBtn.classList.remove('active');
+			    playBtn.classList.add('active');
+			})
+			
+			//  forward btn
+			
+			forwardBtn.addEventListener('click', () => {
+			    if(currentMusic >= songs.length - 1){
+			        currentMusic = 0;
+			    } else{
+			        currentMusic++;
+			    }
+			    setMusic(currentMusic);
+			    playBtn.click();
+			})
+			
+			// backward btn
+			
+			backwardBtn.addEventListener('click', () => {
+			    if(currentMusic <= 0){
+			        currentMusic = songs.length - 1;
+			    } else{
+			        currentMusic--;
+			    }
+			    setMusic(currentMusic);
+			    playBtn.click();
+			})
+			
+			// seekbar events
+			
+			setInterval(() => {
+			    seekBar.value = music.currentTime;
+			    currentMusicTime.innerHTML = formatTime(music.currentTime);
+			    if(Math.floor(music.currentTime) == Math.floor(seekBar.max)){
+			        if(repeatBtn.className.includes('active')){
+			            setMusic(currentMusic);
+			            playBtn.click();
+			        } else{
+			            forwardBtn.click();
+			        }
+			    }
+			}, 500)
+			
+			seekBar.addEventListener('change', () => {
+			    music.currentTime = seekBar.value;
+			})
+			
+			// repeat button
+			
+			repeatBtn.addEventListener('click', () => {
+			    repeatBtn.classList.toggle('active');
+			})
+			
+			// volume section
+			
+			volumeBtn.addEventListener('click', () => {
+			    volumeBtn.classList.toggle('active');
+			    volumeSlider.classList.toggle('active');
+			})
+			
+			volumeSlider.addEventListener('input', () => {
+			    music.volume = volumeSlider.value;
+			})
+			
+			queue.forEach((item, i) => {
+			    item.addEventListener('click', () => {
+			        setMusic(i);
+			        playBtn.click();
+			    })
+			})
+		</script>
+	</body>
+</html>
+
+	
